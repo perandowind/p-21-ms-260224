@@ -1,10 +1,11 @@
-package com.back.jsb1st;
+package com.back.jsb1st.answer;
 
-import java.time.LocalDateTime;
-
+import com.back.jsb1st.question.Question;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.time.LocalDateTime;
 
 @Getter
 @Setter

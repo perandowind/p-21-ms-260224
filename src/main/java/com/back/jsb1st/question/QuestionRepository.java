@@ -1,4 +1,4 @@
-package com.back.jsb1st;
+package com.back.jsb1st.question;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

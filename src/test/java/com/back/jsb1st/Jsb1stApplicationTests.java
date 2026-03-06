@@ -1,5 +1,9 @@
 package com.back.jsb1st;
 
+import com.back.jsb1st.answer.Answer;
+import com.back.jsb1st.answer.AnswerRepository;
+import com.back.jsb1st.question.Question;
+import com.back.jsb1st.question.QuestionRepository;
 import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
