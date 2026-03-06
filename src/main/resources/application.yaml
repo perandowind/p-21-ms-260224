@@ -4,7 +4,21 @@ spring:
       enabled: true
       path: /h2-console
   datasource:
-    url: jdbc:h2:mem:testdb
+    # mem 대신 file 경로를 사용하고, 데이터 유지를 위해 ddl-auto 옵션을 함께 사용합니다.
+    url: jdbc:h2:file:./testdb
     driver-class-name: org.h2.Driver
     username: sa
     password:
+
+  jpa:
+    hibernate:
+      # 테이블 구조를 유지하면서 데이터가 누적되도록 합니다.
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true      # 콘솔에 SQL문 출력
+        format_sql: true    # SQL문을 보기 좋게 정렬
+        highlight_sql: true
+  output:
+    ansi:
+      enabled: always
